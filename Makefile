@@ -2,7 +2,7 @@ NAME := my-echo
 REPOSITORY := ayataka0720/$(NAME)
 TAG := 20240710
 
-GOOS := windows
+GOOS := linux
 GOARCH := amd64
 
 .PHONY: build test image-build image-push clean
