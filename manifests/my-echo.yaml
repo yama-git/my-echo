@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-echo
-        image: ayataka0720/my-echo:20240710
+        image: ayataka0720/my-echo:2024
 ---
 apiVersion: v1
 kind: Service
@@ -39,7 +39,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: "/"
+        path: "/ping"
         backend:
           service:
             name: my-echo
